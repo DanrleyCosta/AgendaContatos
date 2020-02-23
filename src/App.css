@@ -1,0 +1,77 @@
+.App {  
+  background-image: linear-gradient(#20a3d3 20%,#51e6f7 61%);
+}
+
+.App-logo {
+  height: 8vmin;
+  pointer-events: none;
+  vertical-align: middle;
+  left: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    padding: 0 !important;
+  }
+}
+
+.App-header {  
+  min-height: 100vh;
+  top: 0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.MundCatalog {
+ display: flex;
+ overflow-x: scroll;
+ width: 100%;
+}
+.MundList {
+  width: 100px;
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.perfis-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.perfil{
+  position: relative;
+  width: 150px;
+  border: 1px solid #ddd;
+  list-style-type: none;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  background-color: #f6f6f6;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+.simple-trans-main > div {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 3em;
+  will-change: transform, opacity;
+  text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+}
