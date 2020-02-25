@@ -3,12 +3,11 @@ import './App.css';
 import Scroll from './components/scroll';
 import Icons from './components/icons';
 
-function Index() {
+function Perfil() {
   return (
     <div className="App">
       <header className="App-header">
-      <Icons></Icons>
-      <Scroll></Scroll>
+
         <div className="MundCatalog">        
         </div> 
       </header>
@@ -16,4 +15,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Perfil;
