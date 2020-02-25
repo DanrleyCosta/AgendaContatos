@@ -48,18 +48,7 @@
   display: flex;
   flex-wrap: wrap;
 }
-.perfil{
-  position: relative;
-  width: 150px;
-  border: 1px solid #ddd;
-  list-style-type: none;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  transition: all 0.5s ease;
-  cursor: pointer;
-  background-color: #f6f6f6;
-}
+
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -67,11 +56,112 @@
   cursor: pointer;
   position: absolute;
   width: 100%;
-  display: flex;
+  height: 100%;
   justify-content: center;
   color: white;
-  font-weight: 600;
-  font-size: 3em;
+  font-weight: 400;
+  font-size: 2em;
+  will-change: transform, opacity;
+  text-align: center;
+  text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+}
+
+.simple-trans-main2 > div {
+  cursor: pointer;
+  position: absolute;
+  align-items: center;  
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: 400;
+  font-size: 2em;
   will-change: transform, opacity;
   text-shadow: 0px 2px 40px #00000020, 0px 2px 5px #00000030;
+}
+.CardList {
+  margin: auto;
+  display: flex;
+  outline: 0;
+  position: relative;
+  justify-content: center;
+  padding: 24px;
+}
+.CardUl {
+  width: 100%;
+  max-width: 360px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  position: relative;
+  list-style: none;
+}
+.CardLi {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 90%;
+  height: 80px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  justify-content: flex-start;
+  text-decoration: none;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0px 9px 16px 1px rgb(15, 14, 14);
+}
+.CardLi2{
+  background-color: rgb(233, 243, 243) !important;
+}
+.photos{
+  min-width: 56px;
+  flex-shrink: 0;
+}
+.photosLayout {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.25rem;
+  align-items: center;
+  flex-shrink: 0;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1;
+  user-select: none;
+  justify-content: center;
+}
+.photoPerfil {
+  max-width: 100%;
+  max-height: 100%;
+}
+.mainText{
+  margin-top: 6px;
+  margin-bottom: 6px;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.mainSpan {
+  font-size: 0.9rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  margin: 0;
+  color: black;
+}
+.mainP{
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.875rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  margin: 0;
 }
