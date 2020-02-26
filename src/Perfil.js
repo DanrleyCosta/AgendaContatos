@@ -1,17 +1,11 @@
 import React from 'react';
 import './App.css';
-import Scroll from './components/scroll';
-import Icons from './components/icons';
+import Info from './components/Info';
 
+// Pagina de informações sobre os contatos
 function Perfil() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <div className="MundCatalog">        
-        </div> 
-      </header>
-    </div>
+    <Info></Info>
   );
 }
 

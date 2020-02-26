@@ -14,7 +14,7 @@ const pages = [
   ({ style }) => <animated.div style={{ ...style }}>F<Teste letra="f"></Teste></animated.div>,
   ({ style }) => <animated.div style={{ ...style }}>G<Teste letra="g"></Teste></animated.div>
 ]
-
+// Scroll horizontal usando react-spring para formar a animação
 export default function Scroll() {
     const [index, set] = useState(0)    
     const onClick = useCallback(() => set(state => (state + 1) % 8), [])

@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Base from './Base';
-
  
+// Esta classe tem como objetivo montar as informação de cada contato e passar para 
+// a base montar os cards
 export default class Tests extends Component{
     
     render() {
-        // Objeto de contatos
+        // Objeto de contatos criados para teste
         const list = [
         {letra:"a",nome:"Ana Clara",cargo:"Diretora",tel:"31-91959897",email:"ana@teste.com"},
         {letra:"b",nome:"Bruno Alves",cargo:"Operador",tel:"31-91959897",email:"bruno@teste.com"},
@@ -15,13 +16,20 @@ export default class Tests extends Component{
         {letra:"f",nome:"Fernanda alves",cargo:"Engenheira",tel:"31-91959897",email:"alves@teste.com"},
         {letra:"g",nome:"Guilherme Salles",cargo:"Gerente",tel:"31-91959897",email:"salles@teste.com"}
     ]
-        function Test(props) {
+    
+        function Test(props) {            
             for(var i = 0 ; i <= 6 ; i++){
                 if (props.match(list[i].letra)) {
-                    // fazer o acumulo de base
-                    var aux = <Base name={list[i].nome} cargo={list[i].cargo}></Base>;
+                    // fazer o acumulo de base To Do
+                    var aux = 
+                    <Base
+                    name={list[i].nome} 
+                    cargo={list[i].cargo} 
+                    tel={list[i].tel} 
+                    email={list[i].email}>                        
+                    </Base>                    
                   }                                                  
-                }
+                }                
                 return aux;
             }            
         return (
