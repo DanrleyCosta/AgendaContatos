@@ -19,9 +19,9 @@ export default function Scroll() {
     const [index, set] = useState(0)    
     const onClick = useCallback(() => set(state => (state + 1) % 8), [])
     const transitions = useTransition(index, p => p, {
-      from: { opacity: 0, transform: 'translate3d(20%,0,0)' },
+      from: { opacity: 0, transform: 'translate3d(50%,0,0)' },
       enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
-      leave: { opacity: 0, transform: 'translate3d(-20%,0,0)' },
+      leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
     })
     return (
       <div id="idclick" className="simple-trans-main" onClick={onClick}>
@@ -32,5 +32,5 @@ export default function Scroll() {
       </div>
     )
   }
-  
-  render(<Scroll />, document.getElementById('root'))
+
+render(<Scroll />, document.getElementById('root'))
